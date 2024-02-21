@@ -1,0 +1,404 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# System config
+#--------------------------------------------------------------------------------------------
+
+# When the variables are commented, the system doesn't load a previous session or not store the current one
+
+# If the LoadFile doesn't exist, the system give a message and create a new Atlas from scratch
+#System.LoadAtlasFromFile: "Session_MH01_MH02_MH03_Stereo60_Pseudo"
+
+# The store file is created from the current session, if a file with the same name exists it is deleted
+#System.SaveAtlasToFile: "Session_MH01_MH02_MH03_Stereo60_Pseudo"
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters. Adjust them!
+#--------------------------------------------------------------------------------------------
+File.version: "1.0"
+
+Camera.type: "PinHole"
+#第一组实验，控制变量，共视区域角度phi不变，通过修改FOV来修改总视野S
+# 通过测试知道了真实值计算方法，以FOV=80为例：图片大小960*540，胶片背板大小(16:9)为23.76*13.365，设置的焦距为14.15，则fx、fy=960/23.76*14.15。cx=960/2,cy=540/2
+
+## 真实值 FOV=60 fx、fy=960/23.76*20.5=828.2828282828283。cx=960/2,cy=540/2
+#Camera1.fx: 828.2828282828283
+#Camera1.fy: 828.2828282828283
+#Camera1.cx: 480.0
+#Camera1.cy: 270.0
+#Camera1.k1: 0.0
+#Camera1.k2: 0.0
+#Camera1.p1: 0.0
+#Camera1.p2: 0.0
+#Camera2.fx: 828.2828282828283
+#Camera2.fy: 828.2828282828283
+#Camera2.cx: 480.0
+#Camera2.cy: 270.0
+#Camera2.k1: 0.0
+#Camera2.k2: 0.0
+#Camera2.p1: 0.0
+#Camera2.p2: 0.0
+
+## 真实值 FOV=70 fx、fy=960/23.76*16.95=684.848484。cx=960/2,cy=540/2
+#Camera1.fx: 684.8484848484848
+#Camera1.fy: 684.8484848484848
+#Camera1.cx: 480.0
+#Camera1.cy: 270.0
+#Camera1.k1: 0.0
+#Camera1.k2: 0.0
+#Camera1.p1: 0.0
+#Camera1.p2: 0.0
+#Camera2.fx: 684.8484848484848
+#Camera2.fy: 684.8484848484848
+#Camera2.cx: 480.0
+#Camera2.cy: 270.0
+#Camera2.k1: 0.0
+#Camera2.k2: 0.0
+#Camera2.p1: 0.0
+#Camera2.p2: 0.0
+
+# 真实值 FOV=80 fx、fy=960/23.76*14.15=571.717171。cx=960/2,cy=540/2
+#Camera1.fx: 571.717171
+#Camera1.fy: 571.717171
+#Camera1.cx: 480.0
+#Camera1.cy: 270.0
+#Camera1.k1: 0.0
+#Camera1.k2: 0.0
+#Camera1.p1: 0.0
+#Camera1.p2: 0.0
+#Camera2.fx: 571.717171
+#Camera2.fy: 571.717171
+#Camera2.cx: 480.0
+#Camera2.cy: 270.0
+#Camera2.k1: 0.0
+#Camera2.k2: 0.0
+#Camera2.p1: 0.0
+#Camera2.p2: 0.0
+
+# 真实值 FOV=90 fx、fy=960/23.76*11.87=479.59595959。cx=960/2,cy=540/2
+#Camera1.fx: 479.5959596
+#Camera1.fy: 479.5959596
+#Camera1.cx: 480.0
+#Camera1.cy: 270.0
+#Camera1.k1: 0.0
+#Camera1.k2: 0.0
+#Camera1.p1: 0.0
+#Camera1.p2: 0.0
+#Camera2.fx: 479.5959596
+#Camera2.fy: 479.5959596
+#Camera2.cx: 480.0
+#Camera2.cy: 270.0
+#Camera2.k1: 0.0
+#Camera2.k2: 0.0
+#Camera2.p1: 0.0
+#Camera2.p2: 0.0
+
+# 真实值 FOV=100 fx、fy=960/23.76*9.96=402.424242。cx=960/2,cy=540/2
+Camera1.fx: 402.424242
+Camera1.fy: 402.424242
+Camera1.cx: 480.0
+Camera1.cy: 270.0
+Camera1.k1: 0.0
+Camera1.k2: 0.0
+Camera1.p1: 0.0
+Camera1.p2: 0.0
+Camera2.fx: 402.424242
+Camera2.fy: 402.424242
+Camera2.cx: 480.0
+Camera2.cy: 270.0
+Camera2.k1: 0.0
+Camera2.k2: 0.0
+Camera2.p1: 0.0
+Camera2.p2: 0.0
+
+# 真实值 FOV=110 fx、fy=960/23.76*8.31=335.757575。cx=960/2,cy=540/2
+#Camera1.fx: 335.75757575758
+#Camera1.fy: 335.75757575758
+#Camera1.cx: 480.0
+#Camera1.cy: 270.0
+#Camera1.k1: 0.0
+#Camera1.k2: 0.0
+#Camera1.p1: 0.0
+#Camera1.p2: 0.0
+#Camera2.fx: 335.75757575758
+#Camera2.fy: 335.75757575758
+#Camera2.cx: 480.0
+#Camera2.cy: 270.0
+#Camera2.k1: 0.0
+#Camera2.k2: 0.0
+#Camera2.p1: 0.0
+#Camera2.p2: 0.0
+
+# 真实值 FOV=115 fx、fy=960/23.76*7.56=305.454545。cx=960/2,cy=540/2
+#Camera1.fx: 305.45454545454545
+#Camera1.fy: 305.45454545454545
+#Camera1.cx: 480.0
+#Camera1.cy: 270.0
+#Camera1.k1: 0.0
+#Camera1.k2: 0.0
+#Camera1.p1: 0.0
+#Camera1.p2: 0.0
+#Camera2.fx: 305.45454545454545
+#Camera2.fy: 305.45454545454545
+#Camera2.cx: 480.0
+#Camera2.cy: 270.0
+#Camera2.k1: 0.0
+#Camera2.k2: 0.0
+#Camera2.p1: 0.0
+#Camera2.p2: 0.0
+
+# 真实值 FOV=120 fx、fy=960/23.76*6.85=276.76767676。cx=960/2,cy=540/2
+#Camera1.fx: 276.767676768
+#Camera1.fy: 276.767676768
+#Camera1.cx: 480.0
+#Camera1.cy: 270.0
+#Camera1.k1: 0.0
+#Camera1.k2: 0.0
+#Camera1.p1: 0.0
+#Camera1.p2: 0.0
+#Camera2.fx: 276.767676768
+#Camera2.fy: 276.767676768
+#Camera2.cx: 480.0
+#Camera2.cy: 270.0
+#Camera2.k1: 0.0
+#Camera2.k2: 0.0
+#Camera2.p1: 0.0
+#Camera2.p2: 0.0
+
+# 真实值 FOV=125 fx、fy=960/23.76*6.18=249.69696969。cx=960/2,cy=540/2
+#Camera1.fx: 249.69696969697
+#Camera1.fy: 249.69696969697
+#Camera1.cx: 480.0
+#Camera1.cy: 270.0
+#Camera1.k1: 0.0
+#Camera1.k2: 0.0
+#Camera1.p1: 0.0
+#Camera1.p2: 0.0
+#Camera2.fx: 249.69696969697
+#Camera2.fy: 249.69696969697
+#Camera2.cx: 480.0
+#Camera2.cy: 270.0
+#Camera2.k1: 0.0
+#Camera2.k2: 0.0
+#Camera2.p1: 0.0
+#Camera2.p2: 0.0
+
+# 真实值 FOV=130 fx、fy=960/23.76*5.53=223.43434343。cx=960/2,cy=540/2
+#Camera1.fx: 223.43434343
+#Camera1.fy: 223.43434343
+#Camera1.cx: 480.0
+#Camera1.cy: 270.0
+#Camera1.k1: 0.0
+#Camera1.k2: 0.0
+#Camera1.p1: 0.0
+#Camera1.p2: 0.0
+#Camera2.fx: 223.43434343
+#Camera2.fy: 223.43434343
+#Camera2.cx: 480.0
+#Camera2.cy: 270.0
+#Camera2.k1: 0.0
+#Camera2.k2: 0.0
+#Camera2.p1: 0.0
+#Camera2.p2: 0.0
+
+# 真实值 FOV=135 fx、fy=960/23.76*4.92=198.78787878。cx=960/2,cy=540/2
+#Camera1.fx: 198.78787878788
+#Camera1.fy: 198.78787878788
+#Camera1.cx: 480.0
+#Camera1.cy: 270.0
+#Camera1.k1: 0.0
+#Camera1.k2: 0.0
+#Camera1.p1: 0.0
+#Camera1.p2: 0.0
+#Camera2.fx: 198.78787878788
+#Camera2.fy: 198.78787878788
+#Camera2.cx: 480.0
+#Camera2.cy: 270.0
+#Camera2.k1: 0.0
+#Camera2.k2: 0.0
+#Camera2.p1: 0.0
+#Camera2.p2: 0.0
+
+# 真实值 FOV=140 fx、fy=960/23.76*4.32=174.545454。cx=960/2,cy=540/2
+#Camera1.fx: 174.545454545
+#Camera1.fy: 174.545454545
+#Camera1.cx: 480.0
+#Camera1.cy: 270.0
+#Camera1.k1: 0.0
+#Camera1.k2: 0.0
+#Camera1.p1: 0.0
+#Camera1.p2: 0.0
+#Camera2.fx: 174.545454545
+#Camera2.fy: 174.545454545
+#Camera2.cx: 480.0
+#Camera2.cy: 270.0
+#Camera2.k1: 0.0
+#Camera2.k2: 0.0
+#Camera2.p1: 0.0
+#Camera2.p2: 0.0
+
+Camera.width: 960
+Camera.height: 540
+#Camera.newWidth: 900
+#Camera.newHeight: 500  #看例子，这俩参数是用来缩小图像去掉黑边的，不是扩大
+
+# Camera frames per second 
+Camera.fps: 20
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 1
+
+Stereo.ThDepth: 60.0  #用于区分哪些特征点是近点，哪些是远点
+Stereo.T_c1_c2: !!opencv-matrix
+  rows: 4
+  cols: 4
+  dt: f
+#  # 0
+#  data: [ 1.0, 0.0, 0.0, 0.2,
+#          0.0, 1.0, 0.0, 0.0,
+#          0.0, 0.0, 1.0, 0.0,
+#          0,0,0,1.000000000000000]
+
+# 5
+#  data: [ 0.98480775, 0.0,  0.17364818,  0.19923894,
+#          0.0,  1.0,  0.0,  0.0,
+#          -0.17364818, 0.0,  0.98480775, -0.01743115,
+#          0,0,0,1.000000000000000]
+
+## 10  计算真实值
+#  data: [ 0.93969262, 0.0,  0.34202014,  0.1969615506,
+#          0.0,  1.0,  0.0,  0.0,
+#          -0.34202014, 0.0,  0.93969262, -0.0347296,
+#          0,0,0,1.000000000000000]
+#新标定
+#  data: [ 0.93969262, 0.0,  0.34202014,  0.1969615506,
+#          0.0,  1.0,  0.0,  0.0,
+#          -0.34202014, 0.0,  0.93969262, -0.0347296,
+#          0,0,0,1.000000000000000]
+#  data: [ 0.93969262, 0.0,  0.34202014,  0.2,
+#          0.0,  1.0,  0.0,  0.0,
+#          -0.34202014, 0.0,  0.93969262, 0.0,
+#          0,0,0,1.000000000000000]
+
+# 15
+#  # 计算真实值
+#  data: [ 0.8660254, 0.0,  0.5,  0.19318517,
+#          0.0,  1.0,  0.0,  0.0,
+#          -0.5, 0.0,  0.8660254, -0.05176381,
+#          0,0,0,1.000000000000000]
+
+# 20
+  data: [ 0.76604444, 0.0,  0.64278761,  0.18794,
+          0.0,  1.0,  0.0,  0.0,
+          -0.64278761, 0.0,  0.76604444, -0.0684,
+          0,0,0,1.000000000000000]
+
+# 22.5
+#  # 计算真实值
+#  data: [ 0.70710678, 0.0,  0.70710678,  0.18477591,
+#          0.0,  1.0,  0.0,  0.0,
+#          -0.70710678, 0.0,  0.70710678, -0.07653669,
+#          0,0,0,1.000000000000000]
+
+# 25
+#  data: [ 0.64278761, 0.0,  0.76604444,  0.18126156,
+#          0.0,  1.0,  0.0,  0.0,
+#          -0.76604444, 0.0,  0.64278761, -0.08452365,
+#          0,0,0,1.000000000000000]
+
+# 27.5
+#  # 计算真实值
+#  data: [ 0.57357644, 0.0,  0.81915204,  0.17740217,
+#          0.0,  1.0,  0.0,  0.0,
+#          -0.81915204, 0.0,  0.57357644, -0.09234972,
+#          0,0,0,1.000000000000000]
+
+# 30
+#  data: [ 0.5, 0.0,  0.8660254,  0.1732,
+#          0.0,  1.0,  0.0,  0.0,
+#          -0.8660254, 0.0,  0.5, -0.1,
+#          0,0,0,1.000000000000000]
+
+# 32.5
+#  # 计算真实值
+#  data: [ 0.42261826, 0.0,  0.90630779,  0.16867829,
+#          0.0,  1.0,  0.0,  0.0,
+#          -0.90630779, 0.0,  0.42261826, -0.10745992,
+#          0,0,0,1.000000000000000]
+
+# 35
+#  # 计算真实值
+#  data: [ 0.34202014, 0.0,  0.93969262,  0.16383041,
+#          0.0,  1.0,  0.0,  0.0,
+#          -0.93969262, 0.0,  0.34202014, -0.11471529,
+#          0,0,0,1.000000000000000]
+
+# 40
+#  data: [ 0.17364818, 0.0,  0.98480775,  0.1532,
+#          0.0,  1.0,  0.0,  0.0,
+#          -0.98480775, 0.0,  0.17364818, -0.1286,
+#          0,0,0,1.000000000000000]
+
+# 50
+#  # 计算真实值
+#  data: [ -0.17364818, 0.0,  0.98480775,  0.1286,
+#          0.0,  1.0,  0.0,  0.0,
+#          -0.98480775, 0.0,  -0.17364818, -0.1532,
+#          0,0,0,1.000000000000000]
+
+# 60
+#  data: [ -0.5, 0.0,  0.8660254,  0.1,
+#          0.0,  1.0,  0.0,  0.0,
+#          -0.8660254, 0.0,  -0.5, -0.1732,
+#          0,0,0,1.000000000000000]
+
+# 70
+#  data: [ -0.76604444, 0.0,  0.64278761,  0.06840403,
+#          0.0,  1.0,  0.0,  0.0,
+#          -0.64278761, 0.0,  -0.76604444, -0.1879385,
+#          0,0,0,1.000000000000000]
+
+# 80
+#  # 计算真实值
+#  data: [ -0.93969262, 0.0,  0.34202014,  0.03473,
+#          0.0,  1.0,  0.0,  0.0,
+#          -0.34202014, 0.0,  -0.93969262, -0.19696,
+#          0,0,0,1.000000000000000]
+ThDepth: 5.0
+thFarPoints: 20.0
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+
+# ORB Extractor: Number of features per image
+ORBextractor.nFeatures: 1500
+
+# ORB Extractor: Scale factor between levels in the scale pyramid 	
+ORBextractor.scaleFactor: 1.2
+
+# ORB Extractor: Number of levels in the scale pyramid	
+ORBextractor.nLevels: 8
+
+# ORB Extractor: Fast threshold
+# Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
+# Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
+# You can lower these values if your images have low contrast			
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1.0
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2.0
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3.0
+Viewer.ViewpointX: 0.0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500.0
+Viewer.imageViewScale: 1.0
+

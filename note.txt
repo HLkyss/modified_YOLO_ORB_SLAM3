@@ -1,0 +1,21 @@
+来源：https://github.com/YWL0720/YOLO_ORB_SLAM3
+
+export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/hl/project/YOLO_ORB_SLAM3-master/Examples/ROS
+-------------------------------------------------------
+no ros:
+./Examples/RGB-D/rgbd_tum Vocabulary/ORBvoc.txt Examples/RGB-D/TUMX.yaml PATH_TO_SEQUENCE_FOLDER ASSOCIATIONS_FILE
+https://blog.csdn.net/xyt723916/article/details/89374201:
+把 TUMX.yaml 改成 TUM1.yaml,TUM2.yaml or TUM3.yaml 与 freiburg1, freiburg2 and freiburg3 对应起来. 把路径PATH_TO_SEQUENCE_FOLDER改为数据集文件夹路径.
+
+./Examples/RGB-D/rgbd_tum Vocabulary/ORBvoc.txt Examples/RGB-D/TUM1.yaml /media/hl/Stuff/ubuntu_share_2/Dataset/TUM/RGBD/rgbd_dataset_freiburg1_xyz /home/hl/project/YOLO_ORB_SLAM3-master/Examples/RGB-D/associations/fr1_xyz.txt
+
+./Examples/RGB-D/rgbd_tum Vocabulary/ORBvoc.txt Examples/RGB-D/TUM1.yaml /media/hl/Stuff/ubuntu_share_2/Dataset/TUM/RGBD/rgbd_dataset_freiburg1_room /home/hl/project/YOLO_ORB_SLAM3-master/Examples/RGB-D/associations/fr1_room.txt
+
+
+*自己修改了双目的版本：
+./Examples/Stereo/stereo_tum_vi /home/hl/project/ORB_SLAM3_detailed_comments-master/Vocabulary/ORBvoc.txt /home/hl/project/YOLO_ORB_SLAM3-master/Examples/Stereo/ue_pin.yaml /media/hl/Stuff/ubuntu_share_2/Dataset/ue_pin_fov100/theta0/cam0 /media/hl/Stuff/ubuntu_share_2/Dataset/ue_pin_fov100/theta0/cam1 /media/hl/Stuff/ubuntu_share_2/Dataset/ue_180/time.txt /media/hl/Stuff/ubuntu_share_2/Dataset/ue_pin_fov100/theta0/result/dataset-hik_stereo-traj
+在终端可以运行，在clion报错
+--------------------------------------------------------
+ros: 暂时没搞
+roslaunch YOLO_ORB_SLAM3 camera_topic_remap.launch
+rosrun YOLO_ORB_SLAM3 RGBD PATH_TO_VOCABULARY PATH_TO_SETTINGS_FILE
