@@ -1,11 +1,11 @@
-来源：https://github.com/YWL0720/YOLO_ORB_SLAM3
-原开源代码只给了RGBD的，补充了一下自己使用的双目的，后面再补其他的
-*自己修改了双目的版本：
+来源：https://github.com/YWL0720/YOLO_ORB_SLAM3<br />
+原开源代码只给了RGBD的，补充了一下自己使用的双目的，后面再补其他的<br />
+*自己修改了双目的版本：<br />
 ./Examples/Stereo/stereo_tum_vi /home/hl/project/ORB_SLAM3_detailed_comments-master/Vocabulary/ORBvoc.txt /home/hl/project/YOLO_ORB_SLAM3-master/Examples/Stereo/ue_pin.yaml /media/hl/Stuff/ubuntu_share_2/Dataset/ue_pin_fov100/theta0/cam0 /media/hl/Stuff/ubuntu_share_2/Dataset/ue_pin_fov100/theta0/cam1 /media/hl/Stuff/ubuntu_share_2/Dataset/ue_180/time.txt /media/hl/Stuff/ubuntu_share_2/Dataset/ue_pin_fov100/theta0/result/dataset-hik_stereo-traj
 
 <img src="https://github.com/HLkyss/modified_YOLO_ORB_SLAM3/assets/69629475/8cc48db0-8361-4afa-92b7-fc0a09603685" width="900"> <br />
 
----
+***
 # YOLO_ORB_SLAM3
 
 **This is an improved version of [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) that adds an object detection module implemented with [YOLOv5](https://github.com/ultralytics/yolov5) to achieve SLAM in dynamic environments.**
