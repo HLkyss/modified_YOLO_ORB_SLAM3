@@ -1,9 +1,14 @@
 来源：https://github.com/YWL0720/YOLO_ORB_SLAM3<br />
 原开源代码只给了RGBD的，补充了一下自己使用的双目的，后面再补其他的<br />
-*自己修改了双目的版本：<br />
+双目：<br />
 ./Examples/Stereo/stereo_tum_vi /home/hl/project/ORB_SLAM3_detailed_comments-master/Vocabulary/ORBvoc.txt /home/hl/project/YOLO_ORB_SLAM3-master/Examples/Stereo/ue_pin.yaml /media/hl/Stuff/ubuntu_share_2/Dataset/ue_pin_fov100/theta0/cam0 /media/hl/Stuff/ubuntu_share_2/Dataset/ue_pin_fov100/theta0/cam1 /media/hl/Stuff/ubuntu_share_2/Dataset/ue_180/time.txt /media/hl/Stuff/ubuntu_share_2/Dataset/ue_pin_fov100/theta0/result/dataset-hik_stereo-traj
 
 <img src="https://github.com/HLkyss/modified_YOLO_ORB_SLAM3/assets/69629475/8cc48db0-8361-4afa-92b7-fc0a09603685" width="900"> <br />
+
+单目：<br />
+./Examples/Monocular/mono_euroc ./Vocabulary/ORBvoc.txt ./Examples/Monocular/EuRoC.yaml /media/hl/Stuff/ubuntu_share_2/Dataset/EuRoc/V1_02 ./Examples/Monocular/EuRoC_TimeStamps/V102.txt
+
+<img src="https://github.com/HLkyss/modified_YOLO_ORB_SLAM3/assets/69629475/c1ebf5c7-61eb-4e4b-83f1-d30df6d65d12" width="900"> <br />
 
 ***
 # YOLO_ORB_SLAM3
