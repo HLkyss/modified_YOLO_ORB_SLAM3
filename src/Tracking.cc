@@ -1596,7 +1596,23 @@ Sophus::SE3f Tracking::GrabImageRGBD(const cv::Mat &imRGB,const cv::Mat &imD, co
 
 Sophus::SE3f Tracking::GrabImageMonocular(const cv::Mat &im, const double &timestamp, string filename)
 {
-    mImGray = im;
+    //mImGray = im;
+
+    // Yolo  问题：yolo用的是彩色图像，但是stereo用的是灰度图
+    cv::Mat InputImage;
+    InputImage = im.clone();
+    mpDetector->GetImage(InputImage);
+    mpDetector->Detect();
+    mpORBextractorLeft->mvDynamicArea = mpDetector->mvDynamicArea;
+    {
+        std::unique_lock<std::mutex> lock(mpViewer->mMutexPAFinsh);
+        mpViewer->mmDetectMap = mpDetector->mmDetectMap;
+    }
+    mpDetector->mvDynamicArea.clear();
+    mpDetector->mmDetectMap.clear();
+
+    cv::cvtColor(im, mImGray, cv::COLOR_BGR2GRAY);
+
     if(mImGray.channels()==3)
     {
         if(mbRGB)
