@@ -1,5 +1,6 @@
 来源：https://github.com/YWL0720/YOLO_ORB_SLAM3<br />
 原开源代码只给了RGBD的，补充了一下自己使用的双目的，后面再补其他的<br />
+
 双目：<br />
 ./Examples/Stereo/stereo_tum_vi /home/hl/project/ORB_SLAM3_detailed_comments-master/Vocabulary/ORBvoc.txt /home/hl/project/YOLO_ORB_SLAM3-master/Examples/Stereo/ue_pin.yaml /media/hl/Stuff/ubuntu_share_2/Dataset/ue_pin_fov100/theta0/cam0 /media/hl/Stuff/ubuntu_share_2/Dataset/ue_pin_fov100/theta0/cam1 /media/hl/Stuff/ubuntu_share_2/Dataset/ue_180/time.txt /media/hl/Stuff/ubuntu_share_2/Dataset/ue_pin_fov100/theta0/result/dataset-hik_stereo-traj
 
@@ -9,6 +10,10 @@
 ./Examples/Monocular/mono_euroc ./Vocabulary/ORBvoc.txt ./Examples/Monocular/EuRoC.yaml /media/hl/Stuff/ubuntu_share_2/Dataset/EuRoc/V1_02 ./Examples/Monocular/EuRoC_TimeStamps/V102.txt
 
 <img src="https://github.com/HLkyss/modified_YOLO_ORB_SLAM3/assets/69629475/c1ebf5c7-61eb-4e4b-83f1-d30df6d65d12" width="900"> <br />
+
+./Examples/Monocular/mono_tum_vi /home/hl/project/YOLO_ORB_SLAM3-master/Vocabulary/ORBvoc.txt /home/hl/project/YOLO_ORB_SLAM3-master/Examples/Monocular/ue_pin.yaml /media/hl/Stuff/ubuntu_share_2/Dataset/ue_pin_fov100/theta0/cam0 /media/hl/Stuff/ubuntu_share_2/Dataset/ue_180/time.txt
+<img src="https://github.com/HLkyss/modified_YOLO_ORB_SLAM3/assets/69629475/11ae1c0b-531b-4c2b-8e7d-9b34647e34eb" width="900"> <br />
+
 
 ***
 # YOLO_ORB_SLAM3
