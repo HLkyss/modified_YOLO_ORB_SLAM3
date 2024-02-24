@@ -1,6 +1,9 @@
 来源：https://github.com/YWL0720/YOLO_ORB_SLAM3<br />
 原开源代码只给了RGBD的，补充了一下自己使用的双目的，后面再补其他的<br />
 
+编译：<br />
+cmakelists只修改了opencv和cv_bridge相关部分，需要根据自己的环境修改。此外，YoloDetect.cpp里有一句加载模型的语句，我改成了我的绝对路径，需要修改成自己的。<br />
+
 双目：<br />
 ./Examples/Stereo/stereo_tum_vi /home/hl/project/ORB_SLAM3_detailed_comments-master/Vocabulary/ORBvoc.txt /home/hl/project/YOLO_ORB_SLAM3-master/Examples/Stereo/ue_pin.yaml /media/hl/Stuff/ubuntu_share_2/Dataset/ue_pin_fov100/theta0/cam0 /media/hl/Stuff/ubuntu_share_2/Dataset/ue_pin_fov100/theta0/cam1 /media/hl/Stuff/ubuntu_share_2/Dataset/ue_180/time.txt /media/hl/Stuff/ubuntu_share_2/Dataset/ue_pin_fov100/theta0/result/dataset-hik_stereo-traj
 
